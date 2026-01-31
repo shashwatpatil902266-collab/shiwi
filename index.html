@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERATION: SHIWI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Radar Canvas -->
+    <canvas id="radar-screen"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="vignette"></div>
+
+    <main>
+        <header class="mission-briefing">
+            <div class="classified-stamp">TOP SECRET</div>
+            <h1 class="glitch-text">OPERATION: SHIWI</h1>
+            <div class="data-block">
+                <p>STATUS: <span class="blink">TRIBUTE_ACTIVE</span></p>
+                <p>DATE: 1600 HOURS // FEB 16</p>
+                <p>TARGET: BROTHER_01</p>
+                <p>RANK: <span id="rank-display">RECRUIT</span></p>
+            </div>
+
+            <div class="typewriter-container">
+                <p id="typewriter"></p>
+            </div>
+
+            <button id="call-drop-btn" class="tactical-btn">REQUEST SUPPLY DROP</button>
+        </header>
+
+        <!-- Commando Elements -->
+        <div id="supply-drop-container">
+            <div id="parachute" class="hidden">
+                <div class="chute"></div>
+                <div class="crate">
+                    <div class="crate-mark">SUPPLIES</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="promotion-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="medal-icon">🎖️</div>
+                <h2>FIELD PROMOTION</h2>
+                <p>ATTENTION SOLDIER!</p>
+                <p>FOR SURVIVING ANOTHER YEAR WITH HONOR...</p>
+                <h3 class="new-rank">NEW RANK: ELITE COMMANDO</h3>
+                <button id="dismiss-btn">SIR, YES SIR!</button>
+            </div>
+        </div>
+
+        <section class="section-divider">
+            <div class="line"></div>
+            <span>SERVICE RECORD</span>
+            <div class="line"></div>
+        </section>
+
+        <section id="dossier" class="dossier-timeline">
+
+            <div class="file-folder reveal-left">
+                <div class="folder-tab">FILE_001</div>
+                <div class="folder-content">
+                    <div class="photo-frame">
+                        <img src="assets/photo1.jpg" alt="Recruit Photo">
+                        <div class="scanner-line"></div>
+                    </div>
+                    <div class="intel">
+                        <h3>THE ORIGIN</h3>
+                        <p class="mono">Subject shows exceptional resilience. Early training indicates strong leadership
+                            potential.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-folder reveal-right">
+                <div class="folder-tab">FILE_002</div>
+                <div class="folder-content">
+                    <div class="intel">
+                        <h3>FIELD REPORT</h3>
+                        <p class="mono">Tactical growth confirmed. Unwavering loyalty to unit (Family). Readiness level:
+                            MAX.</p>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="assets/photo2.jpg" alt="Field Photo">
+                        <div class="scanner-line"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="final-mission reveal-up">
+            <div class="mission-card">
+                <h2>MISSION OBJECTIVES</h2>
+                <ul class="objectives-list">
+                    <li>[ ] CONQUER THE YEAR AHEAD</li>
+                    <li>[ ] MAINTAIN STRENGTH & HONOR</li>
+                    <li>[ ] REPORT FOR CAKE (IMMEDIATE)</li>
+                </ul>
+                <div class="signature-stamp">APPROVED</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
